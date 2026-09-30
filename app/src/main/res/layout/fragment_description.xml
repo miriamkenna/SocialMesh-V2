@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="Back"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+
+        android:elevation="2dp"/>
+    <TextView
+        android:id="@+id/textview_description_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/button_confirm_description"
+        android:text="@string/descrizione"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descriptionInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_description_label"
+        android:layout_marginTop="8dp"
+        android:hint="@string/inserisci_la_descrizione"
+        app:counterMaxLength="500">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:textSize="18sp"
+            android:lines="3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_confirm_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:text="@string/conferma" />
+
+</RelativeLayout>

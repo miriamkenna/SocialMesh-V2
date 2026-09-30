@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/eventFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:icon="@drawable/baseline_travel_explore_black_24dp"
+        android:title="@string/Eventi" />
+    <item
+        android:id="@+id/matchFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:icon="@drawable/baseline_favorite_border_24"
+        android:title="@string/Match" />
+    <item
+        android:id="@+id/chatFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:icon="@drawable/baseline_chat_bubble_outline_24"
+        android:title="@string/chat" />
+    <item
+        android:id="@+id/profileFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:icon="@drawable/baseline_settings_white_24dp"
+        android:title="@string/settings" />
+</menu>

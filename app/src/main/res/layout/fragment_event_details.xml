@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="@string/back"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:src="@drawable/baseline_arrow_back_ios_brown_24dp"
+        android:elevation="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <!-- Rimuovo la Toolbar -->
+
+        <ImageView
+            android:id="@+id/imageview_event"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/barraVerticale"
+                android:layout_width="2sp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="100dp"
+                android:background="@color/md_theme_light_secondary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_event_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@id/textview_event_title"
+                app:layout_constraintEnd_toStartOf="@id/barraVerticale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                tools:text="0000/00/00" />
+
+            <TextView
+                android:id="@+id/textview_event_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/barraVerticale"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Titolo evento" />
+
+            <TextView
+                android:id="@+id/textview_event_place"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/barraVerticale"
+                app:layout_constraintTop_toBottomOf="@id/textview_event_title"
+                tools:text="Wonderland"  />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/join_button"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/md_theme_light_primary"
+            android:textColor="@color/md_theme_light_onPrimary"
+           />
+
+    </LinearLayout>
+</RelativeLayout>

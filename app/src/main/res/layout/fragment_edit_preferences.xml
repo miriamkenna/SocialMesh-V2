@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="@string/back"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:src="@drawable/baseline_arrow_back_ios_brown_24dp"
+            android:elevation="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button_navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/conferma"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        />
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewSocialMedia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_instagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instagram"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/twitter"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/facebook"
+                android:layout_marginEnd="7dp" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sport"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginStart="8sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_marginBottom="5dp"/>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewSport"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_calcio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calcio"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_basket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/basket"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_tennis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tennis"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_boxe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/boxe"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_crossfit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/crossfit"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_yoga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yoga"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_palestra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/palestra"
+                android:layout_marginEnd="7dp"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/button_motorsport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/motorsport"
+                android:layout_marginEnd="7dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cucina"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginStart="8sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_marginBottom="5dp"/>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewCucina"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_ricette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ricette"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_cucina_italiana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cucina_italiana"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_dolce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dolce"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_vegan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vegan"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_vegetariano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vegetariano"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_carnivoro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/carniavoro"
+                android:layout_marginEnd="7dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/musica"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginStart="8sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_marginBottom="5dp"/>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewMusica"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_rock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rock"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_pop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pop"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_classica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/classica"
+                android:layout_marginEnd="7dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viaggi"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_marginStart="8sp"
+        android:layout_marginBottom="5dp"/>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewViaggi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_destinazioni_esotiche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/destinazioni_esotiche"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_escursioni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/escursioni"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_viaggi_lowCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/viaggi_low_cost"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_beach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spiaggia"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_nature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/natura"
+                android:layout_marginEnd="7dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+     <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobby"
+        android:textStyle="bold"
+        android:textSize="20dp"
+         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+         style="@style/Widget.MaterialComponents.TextView"
+         android:layout_marginStart="8sp"
+        android:layout_marginBottom="5dp"/>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewHobbyCreativi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_pittura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pittura"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_fotografia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fotografia"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_scrittura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scrittura"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_cinema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cinema"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_serieTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/serie_tv"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_libri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/libri"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_giardinaggio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/giardinaggio"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_moda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/moda"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_tecnologia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tecnologia"
+                android:layout_marginEnd="7dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+     <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lavoro"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+         android:layout_marginStart="8sp"
+         style="@style/Widget.MaterialComponents.TextView"/>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewLavoroCarriera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_freelance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/freelance"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_imprenditoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/imprenditoria"
+                android:layout_marginEnd="7dp" />
+
+            <Button
+                android:id="@+id/button_elettricista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/elettricista"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_blogger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blogger"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_programmatore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programmatore"
+                android:layout_marginEnd="7dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/varie"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8sp"/>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewVarie"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_lgbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lgbt"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/single"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_married"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sposato"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_impegnato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/impegnato"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_festival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/festival"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_nft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nft"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_party"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/party"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_karaoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/karaoke"
+                android:layout_marginEnd="7dp" />
+            <Button
+                android:id="@+id/button_fumatore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fumatore"
+                android:layout_marginEnd="7dp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>

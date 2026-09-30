@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_nav_graph"
+    app:startDestination="@+id/login_fragment">
+
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="it.unimib.socialmesh.ui.welcome.LoginFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/navigate_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/navigate_to_registrationFragment"
+            app:destination="@id/registrationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_login_fragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="it.unimib.socialmesh.ui.main.HomeActivity"
+        android:label="activity_main_with_bottom_navigation_view"
+        tools:layout="@layout/activity_home" >
+    </activity>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="it.unimib.socialmesh.ui.welcome.SignupFragment"
+        android:label="socialmesh"
+        tools:layout="@layout/signup_fragment" >
+    <action
+        android:id="@+id/navigate_to_detailsFragment"
+        app:destination="@id/profileDetailsFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="it.unimib.socialmesh.ui.welcome.ProfileDetailsFragment"
+        android:label="ProfileDetailsFragment">
+        <action
+            android:id="@+id/action_profileDetailsFragment_to_preferencesFragment"
+            app:destination="@id/preferencesFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="it.unimib.socialmesh.ui.welcome.PreferencesFragment"
+        android:label="ags"
+        tools:layout="@layout/preferences_fragment" >
+    <action
+        android:id="@+id/navigate_to_homeActivity"
+        app:destination="@id/homeActivity"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="it.unimib.socialmesh.ui.welcome.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+</navigation>

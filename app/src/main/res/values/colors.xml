@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_separator">#585F65</color>
+    <color name="google_login_button">#eceff1</color>
+    <color name="google_login_text">#616161</color>
+    <color name="red">#B22222</color>
+    <color name="socialmesh_orange">#ff6503</color>
+    <color name="socialmesh_icon_color">#FFE0B2</color>
+    <color name="socialmesh_icon_color2">#E65100</color>
+    <color name="facebook_login_button">#3B5998</color>
+    <color name="text_input_background">#D8FFFFFF</color>
+
+
+    <color name="colorPrimary">#49BEFF</color>
+    <color name="colorPrimaryDark">#65DCE5</color>
+    <color name="colorAccent">#0D5D98</color>
+
+
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#b1f4cf</color>
+    <color name="gradStart">#9890e3</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="grey">#E5E5E5</color>
+
+
+
+    <color name="seed">#bf001a</color>
+    <color name="md_theme_light_primary">#C0011A</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#FFDAD6</color>
+    <color name="md_theme_light_onPrimaryContainer">#410003</color>
+    <color name="md_theme_light_secondary">#E9AE2C1E</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#FFDAD5</color>
+    <color name="md_theme_light_onSecondaryContainer">#410001</color>
+    <color name="md_theme_light_tertiary">#9C2F2F</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#FFDAD3</color>
+    <color name="md_theme_light_onTertiaryContainer">#3D0600</color>
+    <color name="md_theme_light_error">#FFDAD6</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    <color name="md_theme_light_background">#FFFBFF</color>
+    <color name="md_theme_light_onBackground">#410005</color>
+    <color name="md_theme_light_surface">#FFFBFF</color>
+    <color name="md_theme_light_onSurface">#410005</color>
+    <color name="md_theme_light_surfaceVariant">#F5DDDB</color>
+    <color name="md_theme_light_onSurfaceVariant">#534342</color>
+    <color name="md_theme_light_outline">#857371</color>
+    <color name="md_theme_light_inverseOnSurface">#FFEDEB</color>
+    <color name="md_theme_light_inverseSurface">#5F1416</color>
+    <color name="md_theme_light_inversePrimary">#FFB3AD</color>
+    <color name="md_theme_light_shadow">#000000</color>
+    <color name="md_theme_light_surfaceTint">#C0011A</color>
+    <color name="md_theme_light_outlineVariant">#D8C2BF</color>
+    <color name="md_theme_light_scrim">#000000</color>
+
+
+    <color name="md_theme_dark_primary">#FFB3AD</color>
+    <color name="md_theme_dark_onPrimary">#680009</color>
+    <color name="md_theme_dark_primaryContainer">#930011</color>
+    <color name="md_theme_dark_onPrimaryContainer">#FFDAD6</color>
+    <color name="md_theme_dark_secondary">#FFB4AA</color>
+    <color name="md_theme_dark_onSecondary">#5F150F</color>
+    <color name="md_theme_dark_secondaryContainer">#AE2C1E</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FFDAD5</color>
+    <color name="md_theme_dark_tertiary">#FFB4A4</color>
+    <color name="md_theme_dark_onTertiary">#5E1607</color>
+    <color name="md_theme_dark_tertiaryContainer">#7D2C1B</color>
+    <color name="md_theme_dark_onTertiaryContainer">#FFDAD3</color>
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+    <color name="md_theme_dark_background">#AE121212</color>
+    <color name="md_theme_dark_onBackground">#FFDAD7</color>
+    <color name="md_theme_dark_surface">#410005</color>
+    <color name="md_theme_dark_onSurface">#FFDAD7</color>
+    <color name="md_theme_dark_surfaceVariant">#534342</color>
+    <color name="md_theme_dark_onSurfaceVariant">#D8C2BF</color>
+    <color name="md_theme_dark_outline">#A08C8A</color>
+    <color name="md_theme_dark_inverseOnSurface">#410005</color>
+    <color name="md_theme_dark_inverseSurface">#FFDAD7</color>
+    <color name="md_theme_dark_inversePrimary">#C0011A</color>
+    <color name="md_theme_dark_shadow">#000000</color>
+    <color name="md_theme_dark_surfaceTint">#FFB3AD</color>
+    <color name="md_theme_dark_outlineVariant">#534342</color>
+    <color name="md_theme_dark_scrim">#000000</color>
+
+    <color name="cardview_background">#830011</color>
+    <color name="sent_message">#E9AE2C1E</color>
+    <color name="received_message">#830011</color>
+
+</resources>
