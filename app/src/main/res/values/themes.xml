@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SocialMesh" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/socialmesh_orange</item>
+
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="borderlessButtonStyle">@style/Widget.App.Button.TextButton</item>
+    </style>
+
+    <style name="Theme.SocialMesh" parent="Base.Theme.SocialMesh" />
+
+    <!-- Date picker theme -->
+    <style name="ThemeOverlay.App.Dialog" parent="@style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorPrimary">@color/md_theme_light_primary</item> <!-- button text color -->
+    </style>
+
+
+    <!-- Style for TextInputLayout -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">?attr/colorOnSurface</item>
+        <item name="boxBackgroundColor">@color/text_input_background</item>
+    </style>
+
+    <!-- Styles for Material TextButton-->
+    <style name="Widget.App.Button.TextButton" parent="Widget.Material3.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="ThemeOverlay.App.Button.TextButton" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#6AFFFFFF</item>
+        <item name="rippleColor">@color/socialmesh_orange</item>
+    </style>
+
+</resources>

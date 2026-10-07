@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventFragment">
+
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="it.unimib.socialmesh.ui.main.eventslist.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" >
+        <action
+            android:id="@+id/action_eventFragment_to_eventDetailsFragment"
+            app:destination="@id/eventDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="it.unimib.socialmesh.ui.main.match.MatchFragment"
+        android:label="fragment_match"
+        tools:layout="@layout/fragment_match" >
+        <action
+            android:id="@+id/action_matchFragment_to_eventPartecipantsFragment"
+            app:destination="@id/eventPartecipantsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="it.unimib.socialmesh.ui.main.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="it.unimib.socialmesh.ui.main.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_welcomeActivity"
+            app:destination="@id/welcomeActivity" />
+        <action
+            android:id="@+id/action_profileFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="it.unimib.socialmesh.ui.main.eventslist.EventDetailsFragment"
+        android:label="EventDetailsFragment" >
+        <argument
+            android:name="event"
+            app:argType="it.unimib.socialmesh.model.Event" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventPartecipantsFragment"
+        android:name="it.unimib.socialmesh.ui.main.match.EventPartecipantsFragment"
+        android:label="fragment_event_partecipants"
+        tools:layout="@layout/fragment_event_partecipants" >
+        <argument
+            android:name="commonEvent"
+            app:argType="it.unimib.socialmesh.model.Event" />
+        <action
+            android:id="@+id/action_eventPartecipantsFragment_to_userDetailsFragment"
+            app:destination="@id/userDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="it.unimib.socialmesh.ui.main.match.UserDetailsFragment"
+        android:label="UserDetailsFragment">
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/welcomeActivity"
+        android:name="it.unimib.socialmesh.ui.welcome.WelcomeActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_welcome" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="it.unimib.socialmesh.ui.main.profile.HelpFragment"
+        android:label="HelpFragment" />
+
+
+</navigation>
